@@ -25,3 +25,5 @@ TestResults.xml
 bin/
 obj/
 *.user
+
+.Data/
