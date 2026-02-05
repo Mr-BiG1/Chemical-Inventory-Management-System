@@ -6,12 +6,16 @@ namespace Chemical_Inventory_Management_System.Models
 {
     public class Batch
     {
-        public int BatchId { get; set; }
-        public int chemicalId { get; set; }
+        // child
+        public int Id { get; set; }
 
+        // Foreign Key
+        public int ChemicalId { get; set; }
+        // setting up refrence 
+        public Chemical? Chemical { get; set; }
         // by adding a ? makes it nullable 
         public string? SupplierName { get; set; }
-        public int Quintity { get; set; }
+        public int Quantity { get; set; }
 
         // setting up time related datas
 
